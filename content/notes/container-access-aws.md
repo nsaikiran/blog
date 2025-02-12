@@ -14,6 +14,7 @@ But below diagram from above doc will give quick overview.
 ![Architecture](https://d2908q01vomqb2.cloudfront.net/fe2ef495a1152561572949784c16bf23abb28057/2022/02/26/Screen-Shot-2022-02-25-at-9.23.07-PM.png "Architecture")
 
 In my words:
+
 * In AWS IAM, you'll create roles which are associated with policies, policies will have list of permissions.  You'll annotate the containers with that role via kubernetes service accounts.
 * You'll need to create an IAM OIDC provider for your cluster, which provides tokens to your service.
 * The above OIDC provider is trusted by the IAM.
