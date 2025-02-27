@@ -134,3 +134,9 @@ Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-
 - Hacker rank test questions
   - ![Q1](images/shaw-1.png)
   - ![Q2](images/shaw-2.png)
+
+### Jira company
+
+[This question](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/agents-with-their-rating-sorted.py) is asked, this round is essentially code design round so it must be low level design round.
+
+I wanted to have a data structure that does the update of average value of rating and also prepopulate the sorted list or keep on updating the sorted list. I think, [the implementation of skiplist based sorted list/sorted set](https://jothipn.github.io/2023/04/07/redis-sorted-set.html) is optimal, but check once if that fits. But I did the basic solution. However keep in mind that these problems where we wanted to have similar solution maybe used.
