@@ -85,13 +85,17 @@ Operations on linked-list:
 - Modified mergesort suits best for sorting.
 - Using fast and slow pointer, we can find, middle of linked list, k th last element etc.
 
-### Imporatnace of relations
+### Importance of relations
 
 Now, imagine we've an array of integers and our task is to check if a given integer exists in our array. Here, we need to find the given integer in the array. It costs us time that is propotional to the size of the array. (Consider we do this opeartion very often) But how can we reduce this? We sort the array. Interestingly when we sort the array in ascending order, we've established correlation between locality of the integer with its value &mdash; an integer is located after integers that are less than this. Using this correlaation we perform binary search. The same principle applies to binary search trees where all keys that are lesser will be stored in its left side. We know the concept of _Height Balanced Binary Search Trees_, which provide us find operation in logarithmic of input even in worst case. But we also spend some extra time to balance the tree, right after a change is done on the tree(which may be ignored if changes to the tree is lesser compared to read/find operations). 
 
 I would highly recommend watching [Sean Parent "Better Code: Data Structures"](https://www.youtube.com/watch?v=sWgDk-o-6ZE), which helped me concretise this idea.
 
-Another example is _Hashing_: where we bring correlation between representaton of object and its location. 
+Other examples
+
+- _Hashing_: where we bring correlation between representaton of object and its location. 
+- _Heap invariant_: In heap, parent and children are related: greater or lesser.
+
 <!-- (Describe?) -->
 
 TODO: Try to give more examples.
