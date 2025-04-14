@@ -3,7 +3,7 @@ layout: post
 title:  "Databases"
 description: "Types of databases, how they are scaled and what to choose when"
 categories: ["system-design"]
-date: 2024-03-15 19:45:31 +0530
+date: 2024-04-14 19:45:31 +0530
 author: "Sai Kiran"
 comments: false
 ---
