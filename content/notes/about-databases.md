@@ -3,7 +3,7 @@ layout: post
 title:  "Databases"
 description: "Types of databases, how they are scaled and what to choose when"
 categories: ["system-design"]
-date: 2024-04-14 19:45:31 +0530
+date: 2025-04-14 19:45:31 +0530
 author: "Sai Kiran"
 comments: false
 ---
@@ -17,7 +17,7 @@ Also, refer his tweets.
 https://x.com/arpit_bhayani/status/1705423114488955333
 https://x.com/arpit_bhayani/status/1727913152875241769
 
-Got good insights on replication, sharding, indexing etc at [Arpit's blog](https://arpitbhayani.me/knowledge-base/database-engineering). [Consistent Hashing](https://arpitbhayani.me/blogs/consistent-hashing) is also explained very well here, which is used to add more nodes to database cluster that maybe shared also which incurring much data movement.
+Got good insights on replication, sharding, indexing etc at [Arpit's blog](https://arpitbhayani.me/knowledge-base/database-engineering). 
 
 In the above podcast as Arpit discussed, we need to first identify what we need and what can compromise, based on that we can choose the database. 
 SQL databases provide strong consistency but they assume the data resides in single node. Synchronous replication helps with strong consistency with distributed SQL nodes but compromises on the throughput. Looks like CockroachDB is ACID compliant while being distributed.
@@ -27,3 +27,14 @@ When data is distributed, then consistency will be not easy to achieve, we might
 If the amount of data can fit in one node, SQL is simple. If data is humungous and can't fit in single node and we can be fine with eventual consistency then go for NOSQL variants. 
 
 But as long as business needs are satisfied no need to introduce fancy technology, if one node of SQL databases can run your business you are good!
+
+#### To improve reads in the system
+
+- [CQRS](https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs): Segregate reads and writes.
+- [Materialized View pattern.](https://learn.microsoft.com/en-us/azure/architecture/patterns/materialized-view): Prepopulate views to power reads
+- [Data partitioning](https://learn.microsoft.com/en-us/azure/architecture/best-practices/data-partitioning): Partition data to improve performance.
+- [Event sourcing](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
+
+There is some good information on Microsoft's architecture center, like the above, refer those.
+
+[Consistent Hashing](https://arpitbhayani.me/blogs/consistent-hashing) is also explained very well here, which is used to add more nodes to database cluster that maybe shared also which incurring much data movement.
