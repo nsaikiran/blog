@@ -19,7 +19,7 @@ https://x.com/arpit_bhayani/status/1727913152875241769
 
 Got good insights on replication, sharding, indexing etc at [Arpit's blog](https://arpitbhayani.me/knowledge-base/database-engineering). 
 
-In the above podcast as Arpit discussed, we need to first identify what we need and what can compromise, based on that we can choose the database. 
+In the above podcast as Arpit discussed, we need to first identify what we need and what can compromise, based on that we can choose the database.
 SQL databases provide strong consistency but they assume the data resides in single node. Synchronous replication helps with strong consistency with distributed SQL nodes but compromises on the throughput. Looks like CockroachDB is ACID compliant while being distributed.
 
 When data is distributed, then consistency will be not easy to achieve, we might have to compromize on certain things.

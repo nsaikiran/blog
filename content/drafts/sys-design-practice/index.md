@@ -34,7 +34,8 @@ In general [All Things Distributed](https://www.allthingsdistributed.com/) is go
 * [Event sourcing](https://microservices.io/patterns/data/event-sourcing.html)
 * [CQRS](https://martinfowler.com/bliki/CQRS.html)
 
-TODO
+TODO: How do you design write heavy systems?
+TODO: Sharding vs partitioning
 
 ## Low-level design or object oriented design questions
 
@@ -52,6 +53,8 @@ TODO
 ### HLD
 
 * [Givne a database that is shared based on the userIDs, create a micro servies that returns connection strings based on userID.](https://www.linkedin.com/pulse/googles-system-design-interview-question-lalit-wazir-qvize)
+* [Flight booking application](https://chatgpt.com/share/67fdbf63-1d90-800b-b7d8-9a1f87b64f11)
+
 
 ### LLD
 

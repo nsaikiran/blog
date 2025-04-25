@@ -16,3 +16,5 @@ Python objects can be recursive! for example, to a list you can add itself as an
 > print(a)
 
 Python's [copy](https://docs.python.org/3/library/copy.html) module highlights this problem. 
+
+We can use `id()` to get unique identifier for each object and traverse all its contained objects and mark if we have visited them already or not.

@@ -96,7 +96,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 
 ## Previous questions and learnings
 
-### Attempt 1
+### G Attempt 1
 
 - Given a set of cartesian points, generate the bounding box that includes all the points.
 - Given two strings, and we can cut the strings at same position. After cut we take the left half of the first string and right part of the second string and join them to form a new string. How many of those new strings are plindromes - https://cs.stackexchange.com/questions/109662/divide-two-strings-to-form-palindrome 
@@ -107,7 +107,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 - Given start binary pattern and destination binary pattern, see if we can reach from start pattern to end, in each step only one bit can be flipped. Also given a set of safe states through which you should be traversing. Moving to a non-safe pattern in invalid. https://leetcode.com/discuss/interview-experience/515564/google-l3-hyderabad-feb-2020-rejected lock round 5
 - Given a dictionary of words, suggest the user words based first few characters typed, like the functionality in mobile phone typing scenario.
 
-### Attempt 2
+### G Attempt 2
 
 - A robot is emitting stream of messages, the format of the messages is: MSG TIMESTAMP. Our goal is to only log the events that are not repeated within K(for ex:10) units of time.
 Robot is emitting messages - time - message.
@@ -122,7 +122,13 @@ Robot is emitting messages - time - message.
   - Learning: Be confident, no self-doubt.
   - We wanted [a sorted set kind of thing.](https://jothipn.github.io/2023/04/07/redis-sorted-set.html)
 
-### Ap-attempt1
+### G Attempt 3
+
+- Given a directed graph we need to find the longest outgoing path from each node.
+  - I took time because I was already sleepy at 10.15 PM. And I've missed one case, I needed to keep 1 + max( longest_path_from_each_childre). But I've kept wrong. Realized at the end of interview but didn't convey as times up.
+    - ![My solution](images/graph-def-my%20solution.png)
+
+### Aple-attempt1
 
 - Hacker rank test questions
   - ![Q1](images/a-hackerrank-q1.png)
@@ -160,3 +166,21 @@ At Atlassian - there are multiple groups, and each can have one or more groups. 
 You are tasked with designing a system that could find the closest common parent group  given a target set of employees in the organization.
 
 I gave a [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/least-cmmon-ancestor.py), and couldn't finish the code, almost done. Review this.
+
+### Pypl
+
+*Didn't finish this question*
+Maximize the sum of k numbers to be picked from an array of size n.
+
+Rules
+k  <= n
+Numbers can be picked for summation only from the ends. This means that element 0 should be picked before element 1 and so on from left side. Similarly from right side, element n-1 should be picked before element n-2 and so on.
+Although we can pick only end elements for summation, we are free to look at all the elements in the array.
+Example, if there is an array like 3,5,1,1,1,1,8. The maximum sum when k = 3 is 16. (3 + 5 + 8)
+
+Refer [my solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/corner-elemenets.py)
+
+## Mock questions
+
+- [Substrings where each vowel occurs atleast once and all vowels must present](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-vowels.py)
+
