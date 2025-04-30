@@ -128,6 +128,10 @@ Robot is emitting messages - time - message.
   - I took time because I was already sleepy at 10.15 PM. And I've missed one case, I needed to keep 1 + max( longest_path_from_each_childre). But I've kept wrong. Realized at the end of interview but didn't convey as times up.
     - ![My solution](images/graph-def-my%20solution.png)
 
+- ![Question](images/lakes-in-island%20-1.png)
+  - ![My solution](images/lakes-in-island%20-2.png)
+    Again a simple DFS based question I think, cross check this problem and clearly learn to solve.
+
 ### Aple-attempt1
 
 - Hacker rank test questions
@@ -171,7 +175,7 @@ I gave a [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/
 
 *Didn't finish this question*
 Maximize the sum of k numbers to be picked from an array of size n.
-
+[Maximize sum of K corner elements in Array](https://www.geeksforgeeks.org/maximize-sum-of-k-elements-in-array-by-taking-only-corner-elements/)
 Rules
 k  <= n
 Numbers can be picked for summation only from the ends. This means that element 0 should be picked before element 1 and so on from left side. Similarly from right side, element n-1 should be picked before element n-2 and so on.

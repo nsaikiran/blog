@@ -7,6 +7,41 @@ tags: ["system design"]
 date: 2024-08-21 19:45:31 +0530
 author: "Sai Kiran"
 ---
+
+## Previous interview questions
+
+### Pypl
+
+#### [Flight booking application](https://chatgpt.com/share/67fdbf63-1d90-800b-b7d8-9a1f87b64f11)
+
+![My solution during interview](images/flight%20booking%20app.png)
+
+Feedback: 
+
+Didn't complete the below steps one by one, didn't complete the model design first before talking about addressing scale.
+
+- First understand usecase clearly, discuss the required functional and non-functional requirements with interviewer.
+- Data modelling based on the usecases to solve.
+- Which database to choose from? 
+  - Consider the size of the data: If the data is small/can fit in one instance/node, use RDBMS or go for NoSQL/distributed databases.
+  - Nature of operations: read heavy/write heavy.
+  - How do we scale/keep the system resialient.
+
+Could have done better in this round.
+
+### Amzn
+
+#### [Design parking lot application](https://www.designgurus.io/course-play/grokking-the-object-oriented-design-interview/doc/design-a-parking-lot)
+
+This question can be either high level or low-level.
+Above steps must be followed for coherent and structure dicussion.
+
+## Practiced questions
+
+- [TinyURL]
+- [Design instagram]
+
+
 ## High level or large scale system design
 
 ### Collaborative software systems
@@ -53,7 +88,6 @@ TODO: Sharding vs partitioning
 ### HLD
 
 * [Givne a database that is shared based on the userIDs, create a micro servies that returns connection strings based on userID.](https://www.linkedin.com/pulse/googles-system-design-interview-question-lalit-wazir-qvize)
-* [Flight booking application](https://chatgpt.com/share/67fdbf63-1d90-800b-b7d8-9a1f87b64f11)
 
 
 ### LLD
