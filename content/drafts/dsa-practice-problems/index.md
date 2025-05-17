@@ -40,6 +40,7 @@ Reference: https://www.geeksforgeeks.org/number-of-substrings-having-an-equal-nu
 ### Sliding window
 
 - (Check if these fall into same category). Understand [the pattern](https://nan-archive.vercel.app/sliding-window) and solve [some problems](https://www.geeksforgeeks.org/number-substrings-count-character-k/ )
+- [Max product subarray](https://www.geeksforgeeks.org/maximum-product-subarray/#expected-approach-by-using-kadanes-algorithm-on-time-and-o1-space)
 
 ### Two pointers
 
@@ -68,6 +69,7 @@ Start from the smallest subproblems, solve them, save their solutions for refere
 - https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 - [The size of the longest incresing subsequence in an array](https://cp-algorithms.com/sequences/longest_increasing_subsequence.html)
   - The link attached has intuitive solution.
+  - [longest increasing subsequnces](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/)
 
 ## Problems to practice
 
@@ -184,7 +186,29 @@ Example, if there is an array like 3,5,1,1,1,1,8. The maximum sum when k = 3 is 
 
 Refer [my solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/corner-elemenets.py)
 
+### MS
+
+*Given a tree  with n (n nodes and n-1 edges), find the nodes that are not on any longest path from any two nodes.*
+
+- ![Ex1](images/ms-1/ex1.svg)
+- [!Ex2](images/ms-1/ex2.svg)
+For ex1, there is no such node, because all nodes are on one of the longest path. (Thre exists several longest paths with same length)
+For ex2, thre is on node, i.e, 4.
+
+Refer [Solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/tree-ms.py)
+
+* Given an array of numbers, find the number of subarrays such that, the bitwise OR of all elements of subarray exists in subarray *
+
+Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-all-unique-chars-and-same-freq.py) Ask chatgpt if questions is there.
+
+
 ## Mock questions
 
 - [Substrings where each vowel occurs atleast once and all vowels must present](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-vowels.py)
 
+
+## Practiced problems
+
+- https://www.geeksforgeeks.org/move-zeroes-end-array/
+- https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
+- https://www.geeksforgeeks.org/maximum-product-subarray/
