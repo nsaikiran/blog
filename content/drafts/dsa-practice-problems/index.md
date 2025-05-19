@@ -139,13 +139,15 @@ Robot is emitting messages - time - message.
 - Hacker rank test questions
   - ![Q1](images/a-hackerrank-q1.png)
   - ![Q2](images/a-hackerrank-q2.png)
-Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-robber/description/) [GFG](https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/) check and do the problem. House robber problem is disguised as [*maximum sum of non adjacent elements*](https://leetcode.com/discuss/interview-question/702177/apple-phone-maximum-sum-of-non-adjacent-elements).
+Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-robber/description/) [GFG](https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/) check and do the problem. House robber problem is disguised as [*maximum sum of non adjacent elements*](https://leetcode.com/discuss/interview-question/702177/apple-phone-maximum-sum-of-non-adjacent-elements). Also, Q2 is same as [maximum sum of non adjacent elements in a circular array](https://www.geeksforgeeks.org/maximum-sum-in-circular-array-such-that-no-two-elements-are-adjacent/).
 
 ### Shaw-attempt1
 
 - Hacker rank test questions
   - ![Q1](images/shaw-1.png)
   - ![Q2](images/shaw-2.png)
+
+Got [solution from chatgpt for Q1](https://chatgpt.com/share/682b78a3-e08c-800b-9701-5b406443f23d). 
 
 ### Jira company
 
@@ -204,11 +206,18 @@ Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/hea
 
 ## Mock questions
 
-- [Substrings where each vowel occurs atleast once and all vowels must present](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-vowels.py)
+- [Substrings where each vowel occurs atleast once and all vowels must present](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-vowels.py) - sliding window - variable length
 
 
 ## Practiced problems
 
 - https://www.geeksforgeeks.org/move-zeroes-end-array/
-- https://www.geeksforgeeks.org/dynamic-programming-building-bridges/
-- https://www.geeksforgeeks.org/maximum-product-subarray/
+- [Building bridges](https://www.geeksforgeeks.org/dynamic-programming-building-bridges/) [This is similar to longest increasing subsequences problem.](https://www.youtube.com/watch?v=MoJy1QV5LXA). - DP
+- [Maximum product subarray](https://www.geeksforgeeks.org/maximum-product-subarray/) - DP
+
+
+TODO: 
+
+- Q2 of de-shaw, 
+- leader board problem using skiplist, with proper ADT diagram and understanding.
+- neetcode list to cover all concepts not only spending too much time on only one concept.
