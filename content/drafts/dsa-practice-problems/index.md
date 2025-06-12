@@ -141,6 +141,8 @@ Robot is emitting messages - time - message.
   - ![Q2](images/a-hackerrank-q2.png)
 Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-robber/description/) [GFG](https://www.geeksforgeeks.org/find-maximum-possible-stolen-value-houses/) check and do the problem. House robber problem is disguised as [*maximum sum of non adjacent elements*](https://leetcode.com/discuss/interview-question/702177/apple-phone-maximum-sum-of-non-adjacent-elements). Also, Q2 is same as [maximum sum of non adjacent elements in a circular array](https://www.geeksforgeeks.org/maximum-sum-in-circular-array-such-that-no-two-elements-are-adjacent/).
 
+Striver has 1D DP and 2D DP practice and get a clear understanding of that. I've seen those videos but practice once again.
+
 ### Shaw-attempt1
 
 - Hacker rank test questions
@@ -148,6 +150,7 @@ Q1 seems similar to [House Robber Leetcode](https://leetcode.com/problems/house-
   - ![Q2](images/shaw-2.png)
 
 Got [solution from chatgpt for Q1](https://chatgpt.com/share/682b78a3-e08c-800b-9701-5b406443f23d). 
+Q2 must be similar to [this question](https://www.geeksforgeeks.org/minimum-number-of-leaves-required-to-be-removed-from-a-tree-to-satisfy-the-given-condition/)
 
 ### Jira company
 
