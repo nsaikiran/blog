@@ -14,4 +14,4 @@ I consider myself as a *generalist*, who brings a solution oriented mindset and 
 
 ### Further related reading
 
-[Problem solving skill or solution oriented mindset]({{< relref "problem-solving-sills.md" >}}) explains a similar concept
+[Problem solving skill or solution oriented mindset]({{< relref "problem-solving-sills.md" >}}) explains a similar idea.
