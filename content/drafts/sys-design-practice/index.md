@@ -40,6 +40,7 @@ Above steps must be followed for coherent and structure dicussion.
 
 - [TinyURL]
 - [Design instagram]
+- [Google mock interview question](https://www.youtube.com/watch?v=S1DvEdR0iUo)
 
 
 ## High level or large scale system design
