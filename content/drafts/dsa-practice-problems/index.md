@@ -71,6 +71,9 @@ Start from the smallest subproblems, solve them, save their solutions for refere
   - The link attached has intuitive solution.
   - [longest increasing subsequnces](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/)
 
+### Practiced problems
+- [Maximum square in a grid](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/dp-questions/maximum-square.py)
+
 ## Problems to practice
 
 - Classify elements in the array. Given an array classify the numbers as even, odd. Put all even numbers to the start of the array and odd numbers to the end. EPI arrays
