@@ -209,6 +209,9 @@ Refer [Solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/hea
 
 Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-all-unique-chars-and-same-freq.py) Ask chatgpt if questions is there.
 
+### SNow
+
+- [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/editorial/). [Find K-th Smallest Pair Distance - Leetcode 719 - Python](https://www.youtube.com/watch?v=bQ-QcFKwsZc) can help understand this problem better.
 
 ## Mock questions
 
