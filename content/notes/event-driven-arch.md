@@ -13,10 +13,9 @@ I was reading about the _event driven architecture_. The usecases of it, how it 
 [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying) has very lengthy yet useful explanation of core idea behind event driven systems which is: append-only, immutable, ordered events stream. 
 This idea has been there in source version control systems like Git. 
 There are several points I've learned but out of those the most striking point was: We all know databases persists the change as a "log" (write-ahead logs), before doing updates. But why is that needed? Because database has several datastructues to update like indexes, storage etc. This log will be used to keep all datastructures in sync.
-The above article is a very good read.
+The above article is a very good read. For revision, maybe get [a summary](https://chatgpt.com/share/68c8d824-7940-800b-b9b4-e80ea47c8fa0) of this article and go over it.
 
 Consider [OK EVENT LOG](https://medium.com/salesforce-engineering/the-architecture-files-ep-3-ok-event-log-56ab8060c546#.lkj99b4v4) as a stripped down version of above article but read the above one it gives lot of information.
-
 
 Major tools for event driven architecture are Apache kafka, Rabbit MQ and Amazon SQS.
 

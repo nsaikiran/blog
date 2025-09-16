@@ -120,7 +120,7 @@ Read:
 - [To Queue Or Not To Queue](https://medium.com/basecs/to-queue-or-not-to-queue-2653bcde5b04)
 - Queue can be implemented with both array and linked list. Lined list based implementation is easy to do. Because dequeue will create empty slots at the front of the list.
 - [Circular queue or ring buffer can be thought of a bounded queue, and when this is implemented using array, each deque operation will create empty slots at the front of the array. We need to use these empty slots to enqueue items further, hence we can see circular usage.][Circular-queue-implementation].
-  - We can use ring buffer implementation to track _most recent_ elements in the stream, for example, given a stream of data, calculate _max_/_sum_ of most recent K numbers.
+  - We can use ring buffer implementation to track _most recent_ elements in the stream, for example, given a stream of data, to perform computation ( _max_/_sum_) on most recent K elements.
 
 ### Stack
 
@@ -174,6 +174,8 @@ For more information refer [Sorted Set](https://jothipn.github.io/2023/04/07/red
 
 ### Heap
 
+When you want min/max or given elements. This data structure can be used in priority queue, and computing k min/max elements from a stream, can be thought of as stream processing.
+
 Read:
 
 - [Learning to Love Heaps by Vaidehi Joshi](https://medium.com/basecs/learning-to-love-heaps-cef2b273a238)
@@ -219,20 +221,40 @@ Some important points:
 <!-- Give more exmaples for context based best things -->
 ### Various common problems and solutions/algorithms:
 
-Some well-known problems and their solutions are listed here.
+Some well-known problems and their solutions are listed here. Examples here are not mentioned in above section.
 
-#### Searching problems:
+#### Searching solutions
 
-- [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm): This algorithm requires data to be sorted.
+- [Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm): This algorithm requires data to be sorted. This implementation works on arrays.
+- [Skip lists](https://opendsa-server.cs.vt.edu/ODSA/Books/CS3/html/SkipList.html#): This algorithm can be understood as `binary search` on linked lists, where the nodes/elements are added dynamically.
 
-#### Sorting problems:
+### Counting
+
+- Some problems can be reduced to counting problems. For example:
+  - Sort array of numbers _that are bounded_, meaning range of number is very small butwe can sort these numbers by counting. When data is bounded.
+  - [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/editorial/), refer [this explanation](https://www.youtube.com/watch?v=bQ-QcFKwsZc).Here, we are just counting the pair differences without actually computing them. This may not be intuitive at first.
+
+#### Sorting solutions
 
 - Insertion sort: in-place, _stable_, optimal for almost sorted data. If other properties of data are unknown, then suitable for small number of data items.
-- [Quick sort](https://www.enjoyalgorithms.com/blog/quick-sort-algorithm): D&C
-- Merge sort: D&C
+- [Quick sort](https://www.enjoyalgorithms.com/blog/quick-sort-algorithm): Example of divid and conquer approach. Can be thought of blanket sorting algorithm if no extra useful information about data is not present (like elements to sort are less or elements are bounded etc.). The worst case complexity can be o(n2), which happens when the data is sorted in opposite order. There are strategies to choose pivot, such as randomized selection, to achieve desired complexity, O(nlong). It is commonly used in practice. This is in-place.
+- Merge sort: Example of divide and conquer, can be thought of blanket algorithm like quick sort. It is stable, guarantees O(nlog n), sorting linked lists and external sorting for big data. But 
 - Heap sort: Using heap data structure.
 - Counting/bucket sort: Linear time sorting, data assumptions
 - Lower bounds for searching or sorting.
+
+### Sliding window
+
+To do certain computations on linear datastrctures (arrays) in linear time.
+
+- Maximum/Minimum subarray sum of size k
+- Longest substring without repeating characters
+- Anagrams in string,
+- Moving average of stream etc
+
+### Prefix sum/cumulative sum
+
+Range sum queries
 
 ### Graph algorithms
 
