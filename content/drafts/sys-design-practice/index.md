@@ -11,7 +11,7 @@ author: "Sai Kiran"
 ## How to approach system design interview
 
 1. Understand the question (and ask clarifying questions) and scope the problem to be solved.
-2. Once problem is scoped, ask the scale our system need to support, maybe proactively assume some numbers like DAU, QPS etc.
+2. Once problem is scoped, ask the scale our system need to support, maybe proactively assume some numbers like DAU, QPS etc. This is called BoE calculations
 3. Based on the numbers take a decision on the architecture and tools to choose from.
 4. Seek interviewer's input on the suggested design and discuss further.
 
