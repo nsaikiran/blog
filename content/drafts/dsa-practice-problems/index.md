@@ -207,11 +207,11 @@ Refer [Solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/hea
 
 * Given an array of numbers, find the number of subarrays such that, the bitwise OR of all elements of subarray exists in subarray *
 
-Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-all-unique-chars-and-same-freq.py) Ask chatgpt if questions is there.
+Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-all-unique-chars-and-same-freq.py).
 
 ### SNow
 
-- [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/editorial/). [Find K-th Smallest Pair Distance - Leetcode 719 - Python](https://www.youtube.com/watch?v=bQ-QcFKwsZc) can help understand this problem better.
+- [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/editorial/). [Find K-th Smallest Pair Distance - Leetcode 719 - Python](https://www.youtube.com/watch?v=bQ-QcFKwsZc) can help understand this problem better. This is an interesting question, to find the kth smallest pair distance of all pairs in the array, rather than generating all pair distances we try to count the number of pairs with distance <= given number, in linear time. And we use binary search to guess that number.
 
 ## Mock questions
 
