@@ -307,7 +307,7 @@ Introduce Computatability of problem, NP-Completeness?
 
 ### Textbooks
 - CLRS
-- Algorithms by by Robert Sedgewick and Kevin Wayne. [Refer slides for each topic](https://sedgewick.io/courses/algorithms/). In this link, go to slides section, useful content.
+- Algorithms by by Robert Sedgewick and Kevin Wayne. [Refer slides for each topic](https://sedgewick.io/courses/algorithms/). In this link, go to slides section, useful content. Also, the related videos are hosted [here](https://www.cubits.ai/collections/117/)
 - Algorithm Design Manual
 
 ## Further Reading:
