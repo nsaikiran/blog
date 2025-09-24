@@ -103,7 +103,7 @@ TODO: Try to give more examples.
 ## Abstract data types
 
 For solving the problem, we first need to decide the operations on objects. The theoretical definition of required operations is called _an Abstract Data Type_. Type of the data describes operations allowed on the data. Because ADT don't have implementation, it is called as _abstract_. For a given ADT, we try to implement data structures that supports those operations; we compare them and pick the one with a reasonable amount of complexity.
-Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), [Circuar queue][Circular-queue-implementation], Priority queue, Graph, Min-Max-heap, Map(of a key-value pair), and [Union-Find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
+Some common ADTs that may be incorporated into the solution are [Dynamic array, Stack, Queue](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1186/lectures/05-Stacks_Queues/5-Stacks_Queues.pdf), [Circuar queue][Circular-queue-implementation], Priority queue, Graph, Min-Max-heap, Map(of a key-value pair), and [Union-Find](https://sedgewick.io/wp-content/uploads/2022/04/Algs01-UnionFind.pdf) etc. It is very rare that you'll have to implement ADT yourself. You may have to implement ADT yourself only when you feel the availble implementaion is not suitable for your use case or you've not found any implemention that suits your need.
 Sometimes, well implemented ADTs may be built-into the programming language you work on or can be used from a library. It is worth knowing various properties of the _readily availble implementsions_ before using them in your particular case.
 
 ### List
@@ -284,7 +284,7 @@ Give reference to examples of these:
   - Exploration algorithms
     - BFS, DFS
   - Shortest path algorithms (generic cases to specific cases (positive weighted, negative weighted, negative weighted with cycles))
-  - [Union-find](https://www.cs.princeton.edu/~rs/AlgsDS07/01UnionFind.pdf) and Hacker rank union-find
+  - [Union-find](https://sedgewick.io/wp-content/uploads/2022/04/Algs01-UnionFind.pdf) and Hacker rank union-find
   - Famous problems (TSP, Knapsack)
 
 Talk about these terms:
@@ -307,6 +307,7 @@ Introduce Computatability of problem, NP-Completeness?
 
 ### Textbooks
 - CLRS
+- Algorithms by by Robert Sedgewick and Kevin Wayne. [Refer slides for each topic](https://sedgewick.io/courses/algorithms/). In this link, go to slides section, useful content.
 - Algorithm Design Manual
 
 ## Further Reading:
