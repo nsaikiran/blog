@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Expert Generalists in the Age of LLMs"
+title:  "Expert generalists in the age of LLMs"
 description: "Generalists vs specialists"
 categories: ["problem solving"]
 date: 2025-08-26 19:45:31 +0530

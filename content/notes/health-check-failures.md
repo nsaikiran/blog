@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Importance of Health Check Configuration in Reliable Systems"
+title:  "Health check configurations in reliable systems"
 description: "Node health check failures can be due to early probe checks"
 categories: ["system-design"]
 date: 2025-01-30 19:45:31 +0530
