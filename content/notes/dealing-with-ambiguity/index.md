@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Ambiguity Is Inevitable!"
+title:  "Ambiguity is inevitable!"
 description: "How to deal with ambiguity and still make progress towards a solution"
 categories: ["problem solving"]
 date: 2026-01-21 05:45:31 +0530
@@ -34,8 +34,9 @@ Even in technical interviews of 45mins duration, you are usually given a problem
 Even, in the interview they are testing "what the candidate can deliver in 45mins given a problem statement".
 So it is essential to deliver working solution in that 45mins despite of ambiguous problem statement. Interviewer is the stakeholder, get their approval on what you can deliver (with proper understanding of problem, options we've, recommended option, and assumptions).
 
-Found an insightful [linkedin post](https://www.linkedin.com/posts/rajya-vardhan_your-life-as-a-software-engineer-changes-activity-7409212180744712193-0VqE). Attaching the image here from that post.
-![Image that contains a quote about ambiguity](images/quote.png#center)
+Found an insightful [linkedin post](https://www.linkedin.com/posts/rajya-vardhan_your-life-as-a-software-engineer-changes-activity-7409212180744712193-0VqE), that resonated with this thought process. Attaching the image here from that post.
+
+![Image that contains a quote about ambiguity](images/quote.jpg#center)
 
 Dealing with ambiguity applies to life in general. Everything in life is ambiguous, we need to take decisions with reasonable assumptions and move forward.
 
