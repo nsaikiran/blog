@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Ambiguity Is Inevitable!"
-description: "How to deal with ambiguity and still make progress towards clarity"
+description: "How to deal with ambiguity and still make progress towards a solution"
 categories: ["problem solving"]
-date: 2026-01-21 19:45:31 +0530
+date: 2026-01-21 05:45:31 +0530
 author: "Sai Kiran"
 comments: false
 ---
