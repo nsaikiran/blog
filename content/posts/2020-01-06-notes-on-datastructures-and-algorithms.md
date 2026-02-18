@@ -185,15 +185,19 @@ Read:
 
 Priority Queue can be implemented with [Heap data structure](https://en.wikipedia.org/wiki/Heap_(data_structure)).
 
-Graphs can be implemented with linked nodes or adjacency matrix (two-dimentional array) or adjacency list 
+### Graphs
+
+Collections of nodes connected with edges
+Graphs can be implemented with linked nodes or adjacency matrix (two-dimentional array) or adjacency list.
 <!-- (array of pointers? to array) -->
+Several real-world problems are converted/reduced to graph problems.
 
-Explore trees: Height balanced binary search trees(AVL or Red black trees), B-trees etc
-
-
-TODO: give more examples
+Refer striver's graph playlist, [full](https://youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&si=2emJOcUS1ziWCCR5), or [condensed](https://youtube.com/playlist?list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&si=Z8bQYYw_VfsrLeMS), they are helpful.
 
 ### Trees
+
+A connected acyclic graph is called a tree.
+Explore trees: Height balanced binary search trees(AVL or Red black trees), B-trees etc
 
 - in-order, pre-order and post-order traversal.
 - depth-first traversal (recursion/backtracking/stack), breadth-first traversal (queue).
@@ -219,7 +223,7 @@ Some important points:
 - Understanding the problem context and the input data very well can help producing algorithms that work best in that specific context. For example, if we are solving a sorting problem, if our data range is very small compared to the size of the data, we go for a counting sort. 
 
 <!-- Give more exmaples for context based best things -->
-### Various common problems and solutions/algorithms:
+### Various common problems and solutions/algorithms
 
 Some well-known problems and their solutions are listed here. Examples here are not mentioned in above section.
 
@@ -239,7 +243,7 @@ Some well-known problems and their solutions are listed here. Examples here are 
 - Insertion sort: in-place, _stable_, optimal for almost sorted data. If other properties of data are unknown, then suitable for small number of data items.
 - [Quick sort](https://www.enjoyalgorithms.com/blog/quick-sort-algorithm): Example of divid and conquer approach. Can be thought of blanket sorting algorithm if no extra useful information about data is not present (like elements to sort are less or elements are bounded etc.). The worst case complexity can be o(n2), which happens when the data is sorted in opposite order. There are strategies to choose pivot, such as randomized selection, to achieve desired complexity, O(nlong). It is commonly used in practice. This is in-place.
 - Merge sort: Example of divide and conquer, can be thought of blanket algorithm like quick sort. It is stable, guarantees O(nlog n), sorting linked lists and external sorting for big data. But 
-- Heap sort: Using heap data structure.
+- Heap sort: Using heap data structure. Pick root (which will max/min)
 - Counting/bucket sort: Linear time sorting, data assumptions
 - Lower bounds for searching or sorting.
 

@@ -72,6 +72,7 @@ Start from the smallest subproblems, solve them, save their solutions for refere
   - [longest increasing subsequnces](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/)
 
 ### Practiced problems
+
 - [Maximum square in a grid](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/dp-questions/maximum-square.py)
 
 ## Problems to practice
@@ -101,7 +102,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 
 ## Previous questions and learnings
 
-### G Attempt 1
+### Set 1
 
 - Given a set of cartesian points, generate the bounding box that includes all the points.
 - Given two strings, and we can cut the strings at same position. After cut we take the left half of the first string and right part of the second string and join them to form a new string. How many of those new strings are plindromes - https://cs.stackexchange.com/questions/109662/divide-two-strings-to-form-palindrome 
@@ -112,7 +113,7 @@ Given a array of numbers, implement some queries. Like rank of a given number, l
 - Given start binary pattern and destination binary pattern, see if we can reach from start pattern to end, in each step only one bit can be flipped. Also given a set of safe states through which you should be traversing. Moving to a non-safe pattern in invalid. https://leetcode.com/discuss/interview-experience/515564/google-l3-hyderabad-feb-2020-rejected lock round 5
 - Given a dictionary of words, suggest the user words based first few characters typed, like the functionality in mobile phone typing scenario.
 
-### G Attempt 2
+### Set 2
 
 - A robot is emitting stream of messages, the format of the messages is: MSG TIMESTAMP. Our goal is to only log the events that are not repeated within K(for ex:10) units of time.
 Robot is emitting messages - time - message.
@@ -127,7 +128,7 @@ Robot is emitting messages - time - message.
   - Learning: Be confident, no self-doubt.
   - We wanted [a sorted set kind of thing.](https://jothipn.github.io/2023/04/07/redis-sorted-set.html)
 
-### G Attempt 3
+### Set 3
 
 - Given a directed graph we need to find the longest outgoing path from each node.
   - I took time because I was already sleepy at 10.15 PM. And I've missed one case, I needed to keep 1 + max( longest_path_from_each_childre). But I've kept wrong. Realized at the end of interview but didn't convey as times up.
@@ -179,7 +180,8 @@ Imagine you are the team that maintains the Atlassian employee directory.
 At Atlassian - there are multiple groups, and each can have one or more groups. Every employee is part of a group.
 You are tasked with designing a system that could find the closest common parent group  given a target set of employees in the organization.
 
-I gave a [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/least-cmmon-ancestor.py), and couldn't finish the code, almost done. Review this.
+I gave a [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/least-cmmon-ancestor.py), and couldn't finish the code, almost done. Review this. It maybe related to [Lowest Common Ancestor in a Binary Tree](https://www.geeksforgeeks.org/dsa/lowest-common-ancestor-binary-tree-set-1/)
+
 
 ### Pypl
 
@@ -209,6 +211,60 @@ Refer [Solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/hea
 
 Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/heads/master/Python/interview-prep/substrings-with-all-unique-chars-and-same-freq.py).
 
+#### Set 2
+
+```1. You are given two arrays, firstShop, and secondShop, representing the prices of n items in two different shops.
+Your task is to select exactly k indices (same indices for both shops) such that the minimum total cost between the two shops for the selected items is as large as possible.
+
+Each item is associated with two costs: one from firstShop and one from secondShop.
+
+The selection must be consistent across both shops: if index i is selected, it contributes its cost from both arrays to the respective sums.
+Example
+n = 5, k= 3
+firstShop = [6, 3, 6, 5, 1]
+secondShop = [1, 4, 5, 9, 2]
+
+Optimally, choose the subset of indices as (0, 2, 3).
+The value is min(6 + 6 + 5, 1 + 5 + 9) = 15, which is the
+maximum possible. Return 15 as the answer.
+
+Returns
+int the maximum possible of the minimum sum from array firstShop and secondShop over k indices
+
+Constraints:
+- 1 ≤ n≤ 50
+- 1 <= firstShop[i], secondShop[i] ≤ 50
+- 1<=k≤n
+```
+
+
+```
+2. 
+A neural network has n neurons numbered from 1 to n. If the ith neuron has strong connectivity, strongConnectivity[i]= 1. 
+If it has weak connectivity, strongConnectivity[i] = 0.
+
+The neurons form a tree-like network with n-1 connections, where the ith connection connects neurons neuronFrom[i] and neuronTo[i]. 
+A neuron's strength is defined as the maximum difference between strongly connected and weakly connected neurons in any subnetwork including that neuron.
+Return an array of n integers, where the ith integer represents the strength of neuron i.
+Note: A subnetwork is a connected subgraph of the given network.
+Example
+n = 4
+neuronFrom = [1, 1, 1]
+neuronTo = [2, 3, 4]
+strongConnectivity= [0, 0, 1, 0]
+
+Check below image:
+* Neuron 3 has strong connectivity
+*   For neuron 1's strength, consider the subnetwork with neurons 1 and 3: 1 strong, 1 weak → strength = 0
+*   For neuron 2's strength, consider the subnetwork with neurons 1, 2, and 3: 1 strong, 2 weak → strength = -1
+*   For neuron 3's strength, consider the subnetwork with only neuron 3: 1 strong, 0 weak → strength = 1
+*   For neuron 4's strength, consider the subnetwork with only neuron 4: 0 strong, 1 weak → strength = -1
+The neuronStrengths array is [0, -1, 1, - 1].
+
+```
+
+![graph](./images/graph.jpegimages)
+
 ### SNow
 
 - [Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/editorial/). [Find K-th Smallest Pair Distance - Leetcode 719 - Python](https://www.youtube.com/watch?v=bQ-QcFKwsZc) can help understand this problem better. This is an interesting question, to find the kth smallest pair distance of all pairs in the array, rather than generating all pair distances we try to count the number of pairs with distance <= given number, in linear time. And we use binary search to guess that number.
@@ -223,6 +279,11 @@ Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/hea
 - https://www.geeksforgeeks.org/move-zeroes-end-array/
 - [Building bridges](https://www.geeksforgeeks.org/dynamic-programming-building-bridges/) [This is similar to longest increasing subsequences problem.](https://www.youtube.com/watch?v=MoJy1QV5LXA). - DP
 - [Maximum product subarray](https://www.geeksforgeeks.org/maximum-product-subarray/) - DP
+
+### Others
+
+- [Minimum Edge Reversals So Every Node Is Reachable](https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/description/)
+- [Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/description/)
 
 
 TODO: 
