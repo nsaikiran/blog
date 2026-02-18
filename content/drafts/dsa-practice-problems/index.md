@@ -263,7 +263,7 @@ The neuronStrengths array is [0, -1, 1, - 1].
 
 ```
 
-![graph](./images/graph.jpegimages)
+![graph](images/graph.jpeg)
 
 ### SNow
 
