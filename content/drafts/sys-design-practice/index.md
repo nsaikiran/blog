@@ -100,6 +100,10 @@ TODO: Sharding vs partitioning
 
 ### LLD
 
+Get to know the top questions asked in interviews, or you are expected to know.
+
+* [Snake Game design](https://leetcode.com/discuss/post/6832341/snake-game-lld-by-anonymous_user-6lyk/). 
+
 * [Design a hit counter that tracks hit within last 5mins](https://www.geeksforgeeks.org/design-a-hit-counter/). We can have a simiar problem in HLD also, basically a hit counter for a webpage.
 
 Read more [LLD problems](https://github.com/ashishps1/awesome-low-level-design) for interviews. [https://github.com/kumaransg/LLD](https://github.com/kumaransg/LLD) is another resource. Practice more wellknown problems like parking lot.
