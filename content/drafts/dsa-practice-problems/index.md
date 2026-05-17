@@ -138,6 +138,10 @@ Robot is emitting messages - time - message.
   - ![My solution](images/lakes-in-island%20-2.png)
     Again a simple DFS based question I think, cross check this problem and clearly learn to solve.
 
+### Sforce
+
+I was asked [All O`one Data Structure](https://leetcode.doocs.org/en/lc/432/) in DSA round. I was able to give solution and coded but it has few bugs and I better needed to have contnious hands on DSA so that I can tackle any round. I've failed this round. [This is the code I wrote](https://github.com/nsaikiran/MyPrograms/blob/master/Python/interview-prep/All%20O%20one%20Datastructure.py), read it again, compare with the expected solutions and learn what could have been improved to be able to code it faster (other than the bugs it had.)
+
 ### Aple-attempt1
 
 - Hacker rank test questions
@@ -213,7 +217,8 @@ Refer [solution](https://raw.githubusercontent.com/nsaikiran/MyPrograms/refs/hea
 
 #### Set 2
 
-```1. You are given two arrays, firstShop, and secondShop, representing the prices of n items in two different shops.
+```
+1. You are given two arrays, firstShop, and secondShop, representing the prices of n items in two different shops.
 Your task is to select exactly k indices (same indices for both shops) such that the minimum total cost between the two shops for the selected items is as large as possible.
 
 Each item is associated with two costs: one from firstShop and one from secondShop.
@@ -264,6 +269,8 @@ The neuronStrengths array is [0, -1, 1, - 1].
 ```
 
 ![graph](images/graph.jpeg)
+
+This is same as [Maximum White Subtree](https://codeforces.com/problemset/problem/1324/F) or [GFG](https://www.geeksforgeeks.org/dsa/maximum-difference-of-count-of-black-and-white-vertices-in-a-path-containing-vertex-v/)
 
 ### SNow
 
