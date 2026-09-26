@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "System Design Notes"
-description: "Designing frontends"
+description: "How to approach system design"
 categories: ["system-design"]
 date: 2026-09-26 19:45:31 +0530
 author: "Sai Kiran"
