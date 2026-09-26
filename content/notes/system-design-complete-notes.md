@@ -113,14 +113,14 @@ NFRs give you the targets (scale, latency, availability); the envelope math conv
 
 ### Average QPS
 
-$$\text{avg QPS} = \frac{\text{DAU} \times \text{actions per user per day}}{86{,}400}$$
+`avg QPS = (DAU × actions per user per day) / 86,400`
 
 **Mental trick:** there are ~100,000 seconds in a day (86,400 rounded up). So `DAU × actions / 10^5` gives QPS instantly in your head.
 
 ### Peak load
 Traffic is never uniform, so:
 
-$$\text{peak QPS} = \text{avg QPS} \times \text{peak factor}$$
+`peak QPS = avg QPS × peak factor`
 
 Two ways to reason about the peak factor:
 
@@ -365,7 +365,7 @@ Multiplexing 5,000 client connections onto 100 DB connections works only because
 
 ### How to size the DB-side pool — Little's Law
 
-$$\text{connections needed} = \text{throughput (QPS)} \times \text{avg query time (s)}$$
+`connections needed = throughput (QPS) × avg query time (s)`
 
 Example: 2,000 queries/s, each holding a connection for 5 ms → 2,000 × 0.005 = **10 connections** to keep up. The *right* pool is usually small. Set the DB-side pool a bit above this for headroom, not at some big round number.
 
