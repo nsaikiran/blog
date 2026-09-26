@@ -184,6 +184,10 @@ Keep the math **fast and round** — powers of ten, clean numbers, no calculator
 
 The precise figure matters far less than the therefore. Each result should trigger the question **"does any single number exceed what one machine / one component can handle?"** — the levers per dimension are listed in Section 6.
 
+### References
+- [Building Software Systems At Google and Lessons Learned — Jeff Dean (Stanford EE380, 2010)](https://www.youtube.com/watch?v=modXC5IWTJI) — Jeff Dean walks through how Google's infrastructure evolved (GFS, MapReduce, Bigtable, the indexing stack) on fleets of commodity, failure-prone machines. The part most relevant here is his "Numbers Everyone Should Know" — the order-of-magnitude latency table (L1/L2 cache, main memory, disk seek, datacenter and cross-continent round trips) reproduced in the *Latency anchors* subsection above. His core method is exactly back-of-the-envelope estimation: before building anything, do the rough math on QPS, storage, and latency to sanity-check whether a design can possibly meet its targets and to locate the dimension that will dominate. Also stresses designing for failure as the default at scale.
+- [It's all a Numbers Game — the Dirty Little Secret of Scalable Systems — Martin Thompson (GOTO 2012)](https://www.youtube.com/watch?v=1KRYH75wgy4) — Thompson's argument is "mechanical sympathy": scalability and performance come from understanding the real numbers of the hardware (cache-line sizes, memory-access latency, disk and network throughput, context-switch cost) rather than from stacking abstraction layers. He shows how respecting those physical constants — keeping the working set in cache, minimizing contention and coordination, choosing data structures that match how the machine actually works — often lets a single well-designed node do what people assume needs a cluster. The takeaway that reinforces this section: measure and reason from concrete numbers, because guessing about where the bottleneck lives is how designs go wrong.
+
 ## 4. Average vs Peak Load (Deeper)
 
 ### Mean vs max of a distribution
